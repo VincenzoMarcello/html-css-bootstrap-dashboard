@@ -22,7 +22,26 @@
 
 .nav-top {
   height: 80px;
-  color: #f8f9fa;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: -120px;
+}
+
+.form-top {
+  flex-grow: 1;
+}
+
+.img-small {
+  max-width: 50px;
+}
+
+.dropdown-toggle {
+  color: #ff8f00;
 }
 
 /* ? BOTTOM CONTENT */
@@ -38,7 +57,8 @@
 /* ? RIGHT CONTENT */
 
 #right-content {
-  width: calc(100% - 80px);
+  height: calc(100vh - 80px);
+  overflow: auto;
 }
 
 /* ? HEADER */
@@ -47,6 +67,8 @@ header {
   min-height: 20%;
   background-color: #1b72e8;
 }
+
+/* ? MAIN */
 
 /* ! RESPONSIVE */
 
