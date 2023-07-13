@@ -724,38 +724,62 @@
           class="row g-3"
         >
           <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" />
+            <label for="Nome" class="form-label">Nome</label>
+            <input type="Nome" class="form-control" name="Nome" id="Nome" />
           </div>
           <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" />
-          </div>
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
+            <label for="Cognome" class="form-label">Cognome</label>
             <input
               type="text"
               class="form-control"
-              id="inputAddress"
-              placeholder="1234 Main St"
+              name="Cognome"
+              id="Cognome"
             />
           </div>
+
+          <div class="col-md-6">
+            <label for="Email" class="form-label">Email</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input
+                id="Email"
+                name="Email"
+                type="email"
+                class="form-control"
+                aria-label="Email"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="Password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              name="Password"
+              id="Password"
+            />
+          </div>
+
           <div class="col-12">
-            <label for="inputAddress2" class="form-label">Address 2</label>
+            <label for="Indirizzo" class="form-label">Indirizzo</label>
             <input
               type="text"
               class="form-control"
-              id="inputAddress2"
-              placeholder="Apartment, studio, or floor"
+              name="Indirizzo"
+              id="Indirizzo"
             />
           </div>
+
           <div class="col-md-6">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity" />
+            <label for="Città" class="form-label">Città</label>
+            <input type="text" class="form-control" id="Città" name="Città" />
           </div>
+
           <div class="col-md-4">
-            <label for="inputState" class="form-label">Stato</label>
-            <select id="inputState" class="form-select">
+            <label for="Stato" class="form-label">Stato</label>
+            <select id="Stato" name="Stato" class="form-select">
               <option selected>Scegli...</option>
               <option name="Italia">Italia</option>
               <option name="Francia">Francia</option>
@@ -763,20 +787,43 @@
               <option name="Spagna">Spagna</option>
             </select>
           </div>
+
           <div class="col-md-2">
-            <label for="inputZip" class="form-label">CAP</label>
-            <input type="text" class="form-control" id="inputZip" />
+            <label for="CAP" class="form-label">CAP</label>
+            <input type="text" class="form-control" id="CAP" name="CAP" />
           </div>
+
+          <div class="col-12">
+            <label for="Foto" class="form-label">Foto</label>
+            <input
+              type="file"
+              class="form-control"
+              id="Foto"
+              name="Foto"
+              aria-describedby="inputGroupFileAddon04"
+              aria-label="Upload"
+            />
+          </div>
+
           <div class="col-12">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck" />
-              <label class="form-check-label" for="gridCheck" required>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="gridCheck"
+                name="gridCheck"
+                required
+              />
+              <label class="form-check-label" for="gridCheck">
                 Selezione per proseguire
               </label>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-1 me-2">
             <button type="submit" class="btn btn-primary">Salva</button>
+          </div>
+          <div class="col-1">
+            <button type="submit" class="btn btn-warning">Svuota</button>
           </div>
         </form>
       </div>
