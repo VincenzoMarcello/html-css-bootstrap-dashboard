@@ -118,6 +118,10 @@ table th {
   font-size: 0.9rem;
 }
 
+.bg:hover {
+  background-color: rgb(162, 185, 193);
+}
+
 /* ? OFFCANVAS */
 
 /* ! RESPONSIVE */
