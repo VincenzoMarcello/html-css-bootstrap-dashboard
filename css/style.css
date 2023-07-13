@@ -16,6 +16,15 @@
 
 /* ! GENERICS */
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* ! SECTIONS SITE */
 
 /* ? TOP CONTENT */
@@ -44,14 +53,27 @@
   color: #ff8f00;
 }
 
+.dropdown-toggle::after {
+  content: none;
+}
+
 /* ? BOTTOM CONTENT */
 
 /* ? LEFT CONTENT */
 
 .nav-bottom {
-  width: 80px;
+  width: 60px;
   height: calc(100vh - 80px);
   background-color: #051e34;
+}
+
+.ico-container {
+  width: 22px;
+  display: inline-block;
+}
+
+#left-content a:hover {
+  background-color: grey;
 }
 
 /* ? RIGHT CONTENT */
@@ -75,11 +97,16 @@ header {
 /* ? TABLET */
 
 @media screen and (min-width: 768px) {
+}
+
+/* ? DESKTOP */
+
+@media screen and (min-width: 992px) {
   .nav-bottom {
-    width: 200px;
+    width: 120px;
   }
 
   #right-content {
-    width: calc(100% - 200px);
+    width: calc(100% - 120px);
   }
 }
