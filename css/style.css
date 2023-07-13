@@ -104,6 +104,20 @@ header {
 
 /* ? MAIN */
 
+.img-first-col {
+  width: 32px;
+  height: 32px;
+}
+
+table p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+table th {
+  font-size: 0.9rem;
+}
+
 /* ? OFFCANVAS */
 
 /* ! RESPONSIVE */
